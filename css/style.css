@@ -261,6 +261,20 @@ body.lock {
   }
 }
 
+@media (max-width: 450px) {
+  .cart {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    width: 80%;
+    margin: 40px auto 0px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+  }
+}
+
 /*---------------------*/
 /*---------------------*/
 .container {
@@ -439,7 +453,15 @@ body.lock {
   height: 450px;
   margin-top: 124px;
   width: 100%;
+  background-color: #fff;
+}
+
+.swiper-slide {
   background-color: #39c7b5;
+}
+
+.swiper-cube-shadow {
+  display: none;
 }
 
 .swiper-pagination-bullet {
@@ -545,30 +567,47 @@ body.lock {
 
 @media (max-width: 650px) {
   .swiper-slide__content {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 45px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-bottom: 45px;
   }
   .swiper-slide__img {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 25%;
-            flex: 0 1 25%;
-    margin-bottom: 25px;
-  }
-  .swiper-slide__img img {
-    width: 220px;
+    padding: 25px 15px;
   }
   .swiper-slide__text-block {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
-  }
-  .swiper-slide__btn {
-    margin-left: auto;
-    margin-right: auto;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 15px;
   }
 }
 
-@media (max-width: 350px) {
-  .swiper {
-    margin-top: 191px;
+@media (max-width: 400px) {
+  .swiper-slide__title {
+    font-size: 41px;
+    line-height: 40px;
+  }
+  .swiper-slide__text {
+    font-size: 15px;
+    line-height: 20px;
   }
 }

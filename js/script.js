@@ -30,7 +30,7 @@ const swiper = new Swiper('.swiper', {
    scrollbar: {
       el: '.swiper-scrollbar',
    },
-   loop: false,
+   loop: true,
    freeMode: false,
    simulateTouch: true,
    touchRatio: 1,
@@ -47,4 +47,13 @@ const swiper = new Swiper('.swiper', {
       loadOnTransitionStart: false,
       loadPrevNext: true,
    },
+   effect: 'coverflow',
+   coverflowEffect: {
+      rotate: 30,
+      slideShadows: false,
+   },
+   autoplay: {
+      delay: 5000,
+   },
+   speed: 1000,
 });

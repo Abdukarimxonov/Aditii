@@ -100,9 +100,7 @@ body.lock {
    background-color: #fff;
 }
 .header {
-   position: fixed;
-   top: 0;
-   left: 0;
+   position: relative;
    z-index: 5;
    margin: 0px auto;
    width: 100%;
@@ -362,13 +360,17 @@ body.lock {
 /*------------------*/
 .swiper {
    width: 100%;
-   height: 450px;
-   margin-top: 124px;
+   min-height: 450px;
+   margin-top: 0px;
    width: 100%;
    background-color: #fff;
+   overflow: hidden;
+   background-color: #39c7b5;
 }
 .swiper-slide {
    background-color: #39c7b5;
+   padding-top: 100px;
+   padding-bottom: 50px;
 }
 .swiper-cube-shadow {
    display: none;
@@ -387,12 +389,17 @@ body.lock {
    display: flex;
    align-items: center;
    justify-content: center;
+   padding-bottom: 50px;
 }
 .swiper-slide__img {
    flex: 0 1 50%;
    display: flex;
    justify-content: center;
    align-items: center;
+}
+.swiper-slide__img img {
+   width: 278px;
+   height: 325px;
 }
 .swiper-slide__text-block {
    flex: 0 1 50%;
@@ -435,11 +442,15 @@ body.lock {
 }
 @media (max-width: 800px) {
    .swiper {
-      margin-top: 119px;
+      margin-top: 0px;
       height: auto;
    }
    .swiper-slide__content {
       padding: 20px;
+   }
+   .swiper-slide {
+      padding-top: 50px;
+      padding-bottom: 40px;
    }
 }
 @media (max-width: 650px) {
@@ -451,9 +462,15 @@ body.lock {
    }
    .swiper-slide__img {
       padding: 25px 15px;
+      order: 2;
+   }
+   .swiper-slide {
+      position: relative;
+      padding-bottom: 30px;
    }
    .swiper-slide__text-block {
       flex: 0 1 100%;
+      order: 1;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -461,6 +478,16 @@ body.lock {
       text-align: center;
       order: 1;
       padding: 15px;
+   }
+   .swiper-slide {
+      padding-top: 0px;
+      padding-bottom: 90px;
+   }
+   .swiper-slide__btn {
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
    }
 }
 @media (max-width: 400px) {
@@ -473,3 +500,4 @@ body.lock {
       line-height: 20px;
    }
 }
+/*---------------------*/

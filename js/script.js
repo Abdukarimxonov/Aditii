@@ -56,4 +56,5 @@ const swiper = new Swiper('.swiper', {
       delay: 5000,
    },
    speed: 1000,
+   autoHeight: true,
 });

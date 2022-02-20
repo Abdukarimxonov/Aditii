@@ -1,4 +1,3 @@
-
 function openNav() {
    document.querySelector(".menu").classList.toggle('active');
    document.querySelector("body").classList.toggle('lock');
@@ -57,5 +56,4 @@ const swiper = new Swiper('.swiper', {
       delay: 5000,
    },
    speed: 1000,
-   autoHeight: true,
 });

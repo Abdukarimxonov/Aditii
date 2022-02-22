@@ -9,7 +9,7 @@ function change(x) {
 };
 /*---------------*/
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.banner-swiper', {
    // Optional parameters
    direction: 'horizontal',
    loop: true,
@@ -21,15 +21,9 @@ const swiper = new Swiper('.swiper', {
    },
 
    // Navigation arrows
-   navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-   },
 
    // And if we need scrollbar
-   scrollbar: {
-      el: '.swiper-scrollbar',
-   },
+
    loop: true,
    freeMode: false,
    simulateTouch: true,
@@ -56,4 +50,45 @@ const swiper = new Swiper('.swiper', {
       delay: 5000,
    },
    speed: 1000,
+});
+
+new Swiper('.image-slider', {
+   //Стрелки
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+   },
+   slideToClickedSlide: false,
+   autoHeight: false,
+   slidesPerView: 3,
+   watchOverflow: true,
+   spaceBetween: 0,
+   slidesPerGroup: 1,
+   autoplay: {
+      delay: 5000,
+   },
+   speed: 1000,
+   direction: 'horizontal',
+   effect: 'slide',
+   breakpoints: {
+      1: {
+         slidesPerView: 1,
+      },
+      600: {
+         slidesPerView: 2,
+      },
+      992: {
+         slidesPerView: 3,
+      },
+   },
+   preloadImages: false,
+   lazy: {
+      loadOnTransitionStart: false,
+      loadPrevNext: false,
+   },
+   watchSlidesProgress: true,
+   watchSlidesVisibility: true,
+
+   centeredSlides: false,
+   initialSlide: 0,
 });

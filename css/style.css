@@ -667,3 +667,77 @@ body.lock {
 .swiper-button-prev:after {
    color: #5b5b5b;
 }
+.products {
+   background-color: #3fc7b5;
+}
+.products__title {
+   max-width: 990px;
+   margin: 0px auto;
+   font-family: "Bebas Neue";
+   font-size: 31px;
+   line-height: 25px;
+   font-weight: 400;
+   color: #ffffff;
+   padding: 25px;
+}
+.products__cards {
+   background-color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 75px;
+}
+.products_cards__wrapper {
+   max-width: 990px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 0;
+}
+.products__card {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 300px;
+   width: 253px;
+   font-family: "Bebas Neue";
+   font-size: 27px;
+   line-height: 25px;
+   font-weight: 400;
+   color: #afafaf;
+   position: relative;
+   margin: 0 27.5px;
+}
+.products__card::after {
+   content: "";
+   width: 254px;
+   height: 5px;
+   background-color: #3cc395;
+   position: absolute;
+   bottom: 0;
+}
+.card__title {
+   margin: 10px 0px;
+}
+.card__info {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+}
+.card__price {
+   padding: 10px;
+}
+.card__btn a {
+   font-family: "Bebas Neue";
+   font-size: 20.2px;
+   line-height: 20px;
+   font-weight: 400;
+   color: #ffffff;
+}
+.card__btn {
+   padding: 10px;
+   background-color: #3cc395;
+   border-radius: 5px;
+}
